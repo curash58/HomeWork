@@ -1,3 +1,0 @@
-"D:\CLion 2020.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Curashteset.dir/objects.a
-D:\ming\mingw64\bin\ar.exe cr CMakeFiles\Curashteset.dir/objects.a @CMakeFiles\Curashteset.dir\objects1.rsp
-D:\ming\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Curashteset.dir/objects.a -Wl,--no-whole-archive  -o Curashteset.exe -Wl,--out-implib,libCurashteset.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Curashteset.dir\linklibs.rsp
