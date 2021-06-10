@@ -1,3 +1,0 @@
-D:/VB/HomeTask/SecondHW/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/VB/HomeTask/SecondHW/cmake-build-debug/CMakeFiles/SecondHW.dir
-D:/VB/HomeTask/SecondHW/cmake-build-debug/CMakeFiles/rebuild_cache.dir
