@@ -1,0 +1,3 @@
+D:/VB/HomeTask/First_HW/cmake-build-debug/CMakeFiles/First_HW.dir
+D:/VB/HomeTask/First_HW/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/VB/HomeTask/First_HW/cmake-build-debug/CMakeFiles/rebuild_cache.dir
