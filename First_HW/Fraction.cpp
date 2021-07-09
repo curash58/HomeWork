@@ -3,43 +3,47 @@
 
 using namespace std;
 
-void Fraction::summ(Fraction drob) {
-    if(denominator == drob.denominator){
-        numerator += drob.numerator;
+Fraction Fraction::operator-(Fraction &fraction) {
+    if(denominator == fraction.denominator){
+        numerator -= fraction.numerator;
 
-        print();
+        return *this;
+    }
 
-        return;
-    };
-    numerator *= drob.denominator;
-    denominator *= drob.denominator;
-    drob.numerator *= denominator;
-    numerator += drob.numerator;
+    numerator *= fraction.denominator;
+    denominator *= fraction.denominator;
+    double tempN = fraction.numerator * denominator;
+    numerator -= tempN;
 
-    print();
+    return *this;
 }
 
-void Fraction::subtraction(Fraction drob) {
-    if(denominator == drob.denominator){
-        numerator -= drob.numerator;
+Fraction Fraction::operator+(Fraction &fraction) {
+    if(denominator == fraction.denominator){
+        numerator += fraction.numerator;
 
-        print();
-
-        return;
+        return *this;
     };
-    numerator *= drob.denominator;
-    denominator *= drob.denominator;
-    drob.numerator *= denominator;
-    numerator -= drob.numerator;
+    numerator *= fraction.denominator;
+    denominator *= fraction.denominator;
+    double tempN = fraction.numerator * denominator;
+    numerator += tempN;
 
-    print();
+    return *this;
 }
 
-void Fraction::multiplication(Fraction drob) {
-    numerator *= drob.numerator;
-    denominator *= drob.denominator;
+Fraction Fraction::operator*(Fraction &fraction) {
+    numerator *= fraction.numerator;
+    denominator *= fraction.denominator;
 
-    print();
+    return *this;
+}
+
+Fraction Fraction::operator/(Fraction &fraction) {
+    numerator /= fraction.numerator;
+    denominator /= fraction.denominator;
+
+    return *this;
 }
 
 
