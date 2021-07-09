@@ -9,14 +9,14 @@ int main() {
     double inputNumerator;
     double inputDenominator;
 
-    cout << "Ââåäèòå ÷èñëèòåëü è çíàìåíàòåëü" << endl;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¸Ñ‚ÐµÐ»ÑŒ Ð¸ Ð·Ð½Ð°Ð¼ÐµÐ½Ð°Ñ‚ÐµÐ»ÑŒ" << endl;
 
     cin >> inputNumerator;
     cin >> inputDenominator;
 
     Fraction drobFrist = Fraction(inputNumerator, inputDenominator);
 
-    cout << "Ââåäèòå äëÿ âòîðîé äðîáè ÷èñëèòåëü è çíàìåíàòåëü" << endl;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ñ Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð´Ñ€Ð¾Ð±Ð¸ Ñ‡Ð¸ÑÐ»Ð¸Ñ‚ÐµÐ»ÑŒ Ð¸ Ð·Ð½Ð°Ð¼ÐµÐ½Ð°Ñ‚ÐµÐ»ÑŒ" << endl;
 
     cin >> inputNumerator;
     cin >> inputDenominator;
@@ -25,12 +25,16 @@ int main() {
 
     drobFrist.print();
     drobSecond.print();
-
-    drobFrist.summ(drobFrist);
-
-    drobFrist.multiplication(drobSecond);
-
-    drobSecond.subtraction(drobFrist);
+    
+    drobFrist = drobFrist + drobSecond;
+    drobFrist.print();
+    drobFrist = drobFrist - drobSecond;
+    drobFrist.print();
+    drobFrist = drobFrist * drobSecond;
+    drobFrist.print();
+    drobFrist = drobFrist / drobSecond;
+    drobFrist.print();
+    
 
     return 0;
 }
